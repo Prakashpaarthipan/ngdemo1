@@ -1,0 +1,27 @@
+<div style="text-align: center">
+<h5>Simple Add Calculatio Using Component</h5>
+<p>
+    <mat-form-field appearance="fill">
+      <mat-label>Fill form field</mat-label>
+      <input matInput placeholder="Number1"  [(ngModel)]="number1" type="number" name="number1">
+      <mat-icon matSuffix>edit</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <p>
+    <mat-form-field appearance="outline">
+      <mat-label>Outline form field</mat-label>
+      <input matInput placeholder="Number2"  [(ngModel)]="number2" type="number" name="number2">
+      <mat-icon matPrefix color="primary">flag</mat-icon>
+      <mat-hint>Hint</mat-hint>
+    </mat-form-field>
+  </p>
+  <button (click)= "add()" mat-raised-button color="primary">Add</button>
+  <div style="padding-top: 50px;background: coral;color:#fff;"> {{ result }}</div>
+  <!-- <button  type="button" name="Calculate">  </button> -->
+<!-- <input [(ngModel)]="number1" type="number" name="number1" value="" placeholder = "">
+<input [(ngModel)]="number2" type="number" name="number2" value="" placeholder = "">
+
+ -->
+
+</div>
